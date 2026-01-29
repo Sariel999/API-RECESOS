@@ -1,8 +1,12 @@
 from config import get_connection
 
-try:
-    conn = get_connection()
-    print("Conexion exitosa a PostgreSQL")
-    conn.close()
-except Exception as e:
-    print("Error:", e)
+if __name__ == "__main__":
+    try:
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("SELECT 1;")
+        print("Connection OK:", cur.fetchone())
+        cur.close()
+        conn.close()
+    except Exception as e:
+        print("Connection ERROR:", e)

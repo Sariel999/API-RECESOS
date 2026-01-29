@@ -1,17 +1,17 @@
 # ===============================
-# Entornos virtuales de Python
+# Entornos virtuales
 # ===============================
 .venv/
 venv/
 env/
 
 # ===============================
-# Variables de entorno (credenciales)
+# Variables de entorno
 # ===============================
 .env
 
 # ===============================
-# Cache y archivos compilados de Python
+# Python cache
 # ===============================
 __pycache__/
 *.pyc
@@ -19,18 +19,24 @@ __pycache__/
 *.pyd
 
 # ===============================
-# Archivos de VS Code / IDEs
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# IDEs / Editores
 # ===============================
 .vscode/
 .idea/
+*.swp
 
 # ===============================
-# Archivos del sistema operativo
+# Sistema operativo
 # ===============================
 .DS_Store
 Thumbs.db
 
 # ===============================
-# Logs
+# Flasgger / Swagger cache
 # ===============================
-*.log
+flasgger_static/
