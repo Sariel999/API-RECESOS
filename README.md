@@ -56,7 +56,7 @@ DB_NAME=nombre_base
 DB_USER=usuario
 DB_PASSWORD=password
 DB_PORT=5432
-Nota: El archivo .env contiene información sensible y no debe subirse al repositorio.
+
 
 Ejecución
 Iniciar la API:
